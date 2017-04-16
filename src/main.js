@@ -5,7 +5,7 @@ import Element from 'element-ui';
 import router from './router';
 
 import './styles/index.css';
-
+Vue.use(Element);
 new Vue({ // eslint-disable-line
     el: '#app',
     router,
