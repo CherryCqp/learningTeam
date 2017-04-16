@@ -5,7 +5,7 @@ import Element from 'element-ui';
 import './styles/index.css';
 
 
-
+Vue.use(Element)
 new Vue({ // eslint-disable-line
     el: '#app',
     render: h => h(App)
