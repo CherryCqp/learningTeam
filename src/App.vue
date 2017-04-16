@@ -1,3 +1,5 @@
 <template>
-  <h1>hello world</h1>
+  <transition name="fade" mode="out-in">
+    <router-view></router-view>
+  </transition>
 </template>

@@ -2,11 +2,12 @@ import Vue from 'vue';
 import App from './App.vue';
 import Element from 'element-ui';
 
+import router from './router';
+
 import './styles/index.css';
-
-
 
 new Vue({ // eslint-disable-line
     el: '#app',
+    router,
     render: h => h(App)
 });
