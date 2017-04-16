@@ -6,7 +6,7 @@
 import mock from '../mock';
     export default{
         mounted(){
-            console.log(mock.orders)
+            console.log(mock.account)
         }
     }
 </script>
