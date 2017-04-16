@@ -1,16 +1,5 @@
 <template>
-<div>
-    <!--<h1>hello world</h1>-->
-    <login/>
-    <!--<test/>-->
-</div>
+  <transition name="fade" mode="out-in">
+    <router-view></router-view>
+  </transition>
 </template>
-
-<script>
-import login from './views/Login.vue';
-// import test from './views/test.vue';
-    export default {
-      components:{ login  }  
-
-    }
-</script>
