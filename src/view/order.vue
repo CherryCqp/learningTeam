@@ -3,10 +3,10 @@
 </template>
 
 <script>
-import mock from '../mock';
+// import mock from '../mock';
     export default{
         mounted(){
-            console.log(mock.account)
+            // console.log(mock.account)
         }
     }
 </script>

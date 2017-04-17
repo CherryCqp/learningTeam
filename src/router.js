@@ -6,15 +6,25 @@ const routes = [{
     path: '/login',
     component: require('./view/login.vue')
 }, {
-    path: '/order',
-    component: require('./view/order.vue')
-}, {
-    path: '/detail/:userid',
-    name: 'detail',
-    component: require('./view/detail.vue')
+    path: '/home',
+    component: require('./view/Home.vue'),
+    children: [{
+        path: '/order',
+        component: require('./view/order.vue')
+    }, {
+        path: '/detail/:userid',
+        name: 'detail',
+        component: require('./view/detail.vue')
+    }, {
+        path: '/fp',
+        component: require('./view/FP.vue')
+    }, {
+        path: '/',
+        redirect: '/fp'
+    }]
 }, {
     path: '/',
-    redirect: '/login'
+    redirect: '/home'
 }]
 
 const router = new VueRouter({
