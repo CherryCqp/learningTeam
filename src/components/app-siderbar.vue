@@ -10,7 +10,7 @@
             </el-submenu>
             <el-menu-item @click="goPath('/order')"
                           index="2"><i class="el-icon-information"></i>订单</el-menu-item>
-            <el-menu-item @click="goPath('/detail/1234')"
+            <el-menu-item @click="goPath({ name: 'detail', params:{ userid: 1234 }})"
                           index="3"><i class="el-icon-date"></i>详情</el-menu-item>
             <el-menu-item index="6"><i class="el-icon-menu"></i>首页</el-menu-item>
             <el-menu-item index="4"><i class="el-icon-plus"></i>充值</el-menu-item>

@@ -12,7 +12,7 @@ export default {
     data() {
         return {
             msg: 'filters实战',
-            code:+new Date() % 3
+            code:+new Date() % 4
         }
     },
     filters: {
@@ -31,7 +31,7 @@ export default {
     },
     methods:{
         changeBtn(){
-            this.code = +new Date() % 3;
+            this.code = +new Date() % 4;
         }
     }
 }

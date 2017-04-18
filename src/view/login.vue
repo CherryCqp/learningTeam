@@ -36,14 +36,14 @@ export default {
         };
         let validUser = function (rule, value, callback) {
             if (value !== userObj.user) {
-                callback(new Error('请输入正确的用户名或密码！'));
+                callback(new Error('请输入正确的用户名或密码！'))
             } else {
                 callback();
-            };
-        };
+            }
+        }
         let validPass = function (rule, value, callback) {
             if (value !== userObj.pass) {
-                callback(new Error('请输入正确的用户名或密码！'));
+                callback(new Error('请输入正确的用户名或密码！'))
             } else {
                 callback();
             }
