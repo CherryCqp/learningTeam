@@ -1,13 +1,38 @@
 <template>
-    <el-alert :title="msg" type="success"></el-alert>
+    <div>
+        <el-alert :title="msg"
+                  type="success" class="marginBottom30"></el-alert>
+        <el-button type="info">{{ code | codeFilter }} </el-button>
+        <el-button type="" @click="changeBtn">改变按钮</el-button>
+    </div>
 </template>
 
 <script>
-    export default{
-        data(){
-            return {
-                msg:'这是函数式的一些练习'
+export default {
+    data() {
+        return {
+            msg: 'filters实战',
+            code:+new Date() % 3
+        }
+    },
+    filters: {
+        codeFilter(value) {
+            switch (value) {
+                case 0:
+                    return 'Go!'
+                case 1:
+                    return '运行中'
+                case 2:
+                    return '创建中'
+                case 3:
+                    return '充气中'
             }
         }
+    },
+    methods:{
+        changeBtn(){
+            this.code = +new Date() % 3;
+        }
     }
+}
 </script>
